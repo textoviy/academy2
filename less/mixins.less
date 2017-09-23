@@ -1,0 +1,21 @@
+.cleafix {
+	&::after {
+		content: "";
+		
+		display: table;
+		clear: both;
+	}
+}
+
+.container {
+	width: 320px;
+	margin: 0 auto;
+	
+	@media @tablet-widths {
+		width: 640px;
+	}
+
+	@media @desktop-widths {
+		width: 960px;
+	}
+}
