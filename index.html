@@ -2,34 +2,50 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pink: Главная</title>
-    <link rel="stylesheet" href="css/style.css" type="text/style">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-    	<div class="page-header__logo">
-    		<img src="" alt="">
-    	</div>
-    	<nav class="main-nav  main-nav--closed  main-nav--nojs">
-    		<button class="main-nav__toggle" type="button"></button>
-    		<div class="main-nav__wrapper">
-    			<ul class="main-nav__items">
-    				<li class="main-nav__item"><a href="#">Главная</a></li>
-    				<li class="main-nav__item"><a href="#">Фотографии</a></li>
-    				<li class="main-nav__item"><a href="#">Конкурс</a></li>
-    				<li class="main-nav__item"><a href="#"></a></li>
-    			</ul>
-    		</div>
-    	</nav>
+    <header class="page-header page-header--mini">
+      <div class="page-header__container">
+    	<a href="#" class="page-header__logo">
+    		<div class="svg"></div>
+    	</a>
+        <label class="toggler toggler--open" for="nav-btn"></label>
+      </div>
     </header>
-    <section class="intro">
+    <input type="checkbox" id="nav-btn">
+    <!--  -->
+    <header class="page-header page-header--full">
+      <div class="page-header__container">
+        <a href="#" class="page-header__logo">
+          <div class="svg"></div>
+        </a>
+        <label class="toggler toggler--close" for="nav-btn"></label>
+        <nav class="main-nav  main-nav--closed  main-nav--nojs">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__items">
+              <li class="main-nav__item"><a  href="#"  class="main-nav__link">Главная</a></li>
+              <li class="main-nav__item"><a  href="#"  class="main-nav__link">Фотографии</a></li>
+              <li class="main-nav__item"><a  href="#"  class="main-nav__link">Конкурс</a></li>
+              <li class="main-nav__item"><a  href="#"  class="main-nav__link"></a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--  -->
+    <div class="intro">
     	<div class="intro__wrapper">
     		<section class="page-title  page-title--main">
     			<div class="page-title__container  page-title__main-container">
     				<h1 class="page-title__heading--main  page-title__heading">Взгляните на жизнь иначе!</h1>
     			</div>
-    		</section>
-    	</div>
+        </section>
+      </div>
+    </div>
+
     	<section class="download-app">
     		<a class="download-app__button">Скачать приложение</a>
             <div class="download-app__platforms">
@@ -37,8 +53,9 @@
             	<div class="platform platform--android"></div>
             	<div class="platform platform--winphone"></div>
             <p class="download-app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-    	</section>
-    </section>
+            </div>
+      </section>
+
     <section class="features">
     	<div class="features__title">
     		<div class="container">
