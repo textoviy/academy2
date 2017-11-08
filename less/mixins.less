@@ -1,21 +1,24 @@
 .cleafix {
 	&::after {
 		content: "";
-		
+
 		display: table;
 		clear: both;
 	}
 }
 
 .container {
-	width: 320px;
+	width: 280px;
 	margin: 0 auto;
-	
+  padding: 0 20px;
+
+
 	@media @tablet-widths {
-		width: 640px;
+		width: 620px;
+
 	}
 
 	@media @desktop-widths {
-		width: 960px;
+		width: 940px;
 	}
 }
