@@ -1,0 +1,221 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+}
+.page-header {
+  width: 100%;
+  min-height: 66px;
+  user-select: none;
+}
+.page-header__container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+@media (min-width: 768px) {
+  .page-header__container {
+    width: 620px;
+  }
+}
+@media (min-width: 1200px) {
+  .page-header__container {
+    width: 940px;
+  }
+}
+.page-header__logo {
+  display: block;
+  width: 300px;
+}
+.page-header--mini {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.page-header--full {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  background-color: #283645;
+}
+.nav-btn {
+  display: none;
+}
+.nav-btn:checked ~ .page-header--full {
+  display: block;
+}
+.toggler {
+  display: block;
+  width: 50px;
+  height: 24px;
+  position: relative;
+  z-index: 1;
+  top: 0px;
+  right: 0px;
+  float: right;
+}
+.page-header--full .toggler {
+  width: 27px;
+  height: 27px;
+  background-color: transparent;
+}
+.toggler--open {
+  display: block;
+  background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 16.66666667%, rgba(255, 255, 255, 0) 16.66666667%, rgba(255, 255, 255, 0) 41.66666667%, #ffffff 41.66666667%, #ffffff 58.33333333%, rgba(255, 255, 255, 0) 58.33333333%, rgba(255, 255, 255, 0) 83.33333333%, #ffffff 83.33333333%, #ffffff 100%);
+  width: 50px;
+  height: 24px;
+  position: relative;
+  z-index: 1;
+  right: 0px;
+  float: right;
+}
+.toggler--close {
+  float: right;
+  position: relative;
+  top: 0px;
+}
+.toggler--close::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  transition: 0.3s;
+  transform: rotate(45deg);
+  top: 3px;
+  left: 11px;
+  background-color: #ffffff;
+}
+.toggler--close::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  transition: 0.3s;
+  transform: rotate(-45deg);
+  top: 3px;
+  left: 11px;
+  background-color: #ffffff;
+}
+@media (min-width: 768px) {
+  .page-header {
+    min-height: 110px;
+  }
+  .page-header__container {
+    padding-top: 44px;
+    padding-bottom: 42px;
+  }
+}
+@media (min-width: 1200px) {
+  .page-header__container {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+  .toggler {
+    display: none;
+  }
+  .page-header--mini {
+    display: none;
+  }
+  .page-header--full {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+.main-nav {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.main-nav__items {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.main-nav__link {
+  display: block;
+  padding: 23px 0px;
+  text-align: center;
+  line-height: 22px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #283645;
+  text-decoration: none;
+  border-top: 1px solid #000001;
+  border-bottom: 1px solid #485461;
+}
+.main-nav__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media (min-width: 768px) {
+  .main-nav__wrapper {
+    width: 620px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-nav__wrapper {
+    width: 940px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-nav {
+    max-width: 630px;
+    position: static;
+    float: right;
+  }
+  .main-nav__item {
+    display: inline-block;
+  }
+  .main-nav__link {
+    position: relative;
+    border: none;
+    padding: 0;
+    padding-bottom: 10px;
+    margin-right: 80px;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .main-nav__link:hover {
+    border-bottom: 2px solid #ffffff;
+  }
+  .main-nav__wrapper {
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+  .page-header__container {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+}
+.intro {
+  height: 462px;
+}
+.cleafix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 620px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 940px;
+  }
+}
