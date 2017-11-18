@@ -20,12 +20,12 @@ body {
   padding-top: 21px;
   padding-bottom: 21px;
 }
-@media (min-width: 768px) {
+@media (min-width: 660px) {
   .page-header__container {
     width: 620px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .page-header__container {
     width: 940px;
   }
@@ -103,7 +103,7 @@ body {
   left: 11px;
   background-color: #ffffff;
 }
-@media (min-width: 768px) {
+@media (min-width: 660px) {
   .page-header {
     min-height: 110px;
   }
@@ -112,7 +112,7 @@ body {
     padding-bottom: 42px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .page-header__container {
     padding-top: 52px;
     padding-bottom: 52px;
@@ -152,22 +152,7 @@ body {
   border-top: 1px solid #000001;
   border-bottom: 1px solid #485461;
 }
-.main-nav__wrapper {
-  width: 280px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-@media (min-width: 768px) {
-  .main-nav__wrapper {
-    width: 620px;
-  }
-}
-@media (min-width: 1200px) {
-  .main-nav__wrapper {
-    width: 940px;
-  }
-}
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .main-nav {
     max-width: 630px;
     position: static;
@@ -197,7 +182,87 @@ body {
   }
 }
 .intro {
+  background-image: url(../img/background-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  margin-left: 0;
+}
+.intro__wrapper {
+  background-image: url(../img/iphone-5-in-hand-png.png);
+  background-repeat: no-repeat;
+  background-position: 20% bottom;
+  background-size: auto;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
   height: 462px;
+}
+@media (min-width: 660px) {
+  .intro__wrapper {
+    width: 620px;
+  }
+}
+@media (min-width: 960px) {
+  .intro__wrapper {
+    width: 940px;
+  }
+}
+@media (min-width: 660px) {
+  .intro {
+    background-image: url(../img/background-mobile@2x.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    margin-left: 0;
+  }
+  .intro__wrapper {
+    background-image: url(../img/iphone-6-copy.png);
+    background-repeat: no-repeat;
+    background-position: 20% bottom;
+    width: 280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 733px;
+  }
+}
+@media (min-width: 660px) and (min-width: 660px) {
+  .intro__wrapper {
+    width: 620px;
+  }
+}
+@media (min-width: 660px) and (min-width: 960px) {
+  .intro__wrapper {
+    width: 940px;
+  }
+}
+@media (min-width: 960px) {
+  .intro {
+    background-image: url(../img/background-mobile@3x.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    margin-left: 0;
+  }
+  .intro__wrapper {
+    background-image: url(../img/iphone-6-desktop.png);
+    background-repeat: no-repeat;
+    background-position: 20% bottom;
+    width: 280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 853px;
+  }
+}
+@media (min-width: 960px) and (min-width: 660px) {
+  .intro__wrapper {
+    width: 620px;
+  }
+}
+@media (min-width: 960px) and (min-width: 960px) {
+  .intro__wrapper {
+    width: 940px;
+  }
 }
 .cleafix::after {
   content: "";
@@ -209,12 +274,12 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
-@media (min-width: 768px) {
+@media (min-width: 660px) {
   .container {
     width: 620px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .container {
     width: 940px;
   }
