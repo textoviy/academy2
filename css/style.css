@@ -103,11 +103,9 @@ body {
   float: right;
 }
 .toggler--open:hover {
-  transition: 0.1s;
   background-image: linear-gradient(to bottom, #d22856 0%, #d22856 16.66666667%, rgba(255, 255, 255, 0) 16.66666667%, rgba(255, 255, 255, 0) 41.66666667%, #d22856 41.66666667%, #d22856 58.33333333%, rgba(255, 255, 255, 0) 58.33333333%, rgba(255, 255, 255, 0) 83.33333333%, #d22856 83.33333333%, #d22856 100%);
 }
 .toggler--open:active {
-  transition: 0.1s;
   background-image: linear-gradient(to bottom, rgba(210, 40, 86, 0.3) 0%, rgba(210, 40, 86, 0.3) 16.66666667%, rgba(255, 255, 255, 0) 16.66666667%, rgba(255, 255, 255, 0) 41.66666667%, rgba(210, 40, 86, 0.3) 41.66666667%, rgba(210, 40, 86, 0.3) 58.33333333%, rgba(255, 255, 255, 0) 58.33333333%, rgba(255, 255, 255, 0) 83.33333333%, rgba(210, 40, 86, 0.3) 83.33333333%, rgba(210, 40, 86, 0.3) 100%);
 }
 .toggler--close {
@@ -120,7 +118,6 @@ body {
   position: absolute;
   width: 4px;
   height: 20px;
-  transition: 0.1s;
   transform: rotate(45deg);
   top: 3px;
   left: 11px;
@@ -131,7 +128,6 @@ body {
   position: absolute;
   width: 4px;
   height: 20px;
-  transition: 0.1s;
   transform: rotate(-45deg);
   top: 3px;
   left: 11px;
@@ -139,19 +135,15 @@ body {
 }
 .toggler--close:hover::before {
   background-color: #d22856;
-  transition: 0.1s;
 }
 .toggler--close:hover::after {
   background-color: #d22856;
-  transition: 0.1s;
 }
 .toggler--close:active::before {
   background-color: #D22856;
-  transition: 0.1s;
 }
 .toggler--close:active::after {
   background-color: #D22856;
-  transition: 0.1s;
 }
 @media (min-width: 680px) {
   .page-header {
