@@ -20,7 +20,7 @@ body {
   padding-top: 21px;
   padding-bottom: 21px;
 }
-@media (min-width: 660px) {
+@media (min-width: 680px) {
   .page-header__container {
     width: 620px;
   }
@@ -103,7 +103,7 @@ body {
   left: 11px;
   background-color: #ffffff;
 }
-@media (min-width: 660px) {
+@media (min-width: 680px) {
   .page-header {
     min-height: 110px;
   }
@@ -182,23 +182,24 @@ body {
   }
 }
 .intro {
+  position: relative;
   background-image: url(../img/background-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: cover;
   margin-left: 0;
+  border-top: 1px solid transparent;
 }
 .intro__wrapper {
   background-image: url(../img/iphone-5-in-hand-png.png);
   background-repeat: no-repeat;
   background-position: 20% bottom;
-  background-size: auto;
+  background-size: 285px;
   width: 280px;
   margin: 0 auto;
   padding: 0 20px;
   height: 462px;
 }
-@media (min-width: 660px) {
+@media (min-width: 680px) {
   .intro__wrapper {
     width: 620px;
   }
@@ -208,7 +209,18 @@ body {
     width: 940px;
   }
 }
-@media (min-width: 660px) {
+.intro__description-container {
+  padding-top: 66px;
+  margin: 0 auto;
+  text-align: center;
+}
+.intro__description {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 100;
+  color: #ffffff;
+}
+@media (min-width: 680px) {
   .intro {
     background-image: url(../img/background-mobile@2x.jpg);
     background-repeat: no-repeat;
@@ -220,18 +232,19 @@ body {
     background-image: url(../img/iphone-6-copy.png);
     background-repeat: no-repeat;
     background-position: 20% bottom;
+    background-size: auto;
     width: 280px;
     margin: 0 auto;
     padding: 0 20px;
     height: 733px;
   }
 }
-@media (min-width: 660px) and (min-width: 660px) {
+@media (min-width: 680px) and (min-width: 680px) {
   .intro__wrapper {
     width: 620px;
   }
 }
-@media (min-width: 660px) and (min-width: 960px) {
+@media (min-width: 680px) and (min-width: 960px) {
   .intro__wrapper {
     width: 940px;
   }
@@ -248,13 +261,14 @@ body {
     background-image: url(../img/iphone-6-desktop.png);
     background-repeat: no-repeat;
     background-position: 20% bottom;
+    background-size: auto;
     width: 280px;
     margin: 0 auto;
     padding: 0 20px;
     height: 853px;
   }
 }
-@media (min-width: 960px) and (min-width: 660px) {
+@media (min-width: 960px) and (min-width: 680px) {
   .intro__wrapper {
     width: 620px;
   }
@@ -263,6 +277,62 @@ body {
   .intro__wrapper {
     width: 940px;
   }
+}
+.download-app {
+  width: 100%;
+  background-color: #1d2631;
+}
+.download-app__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  min-height: 271px;
+  padding-top: 28px;
+}
+@media (min-width: 680px) {
+  .download-app__wrapper {
+    width: 620px;
+  }
+}
+@media (min-width: 960px) {
+  .download-app__wrapper {
+    width: 940px;
+  }
+}
+.download-app__button {
+  display: block;
+  padding: 14px 35px 17px 35px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  border-radius: 50px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  cursor: pointer;
+  user-select: none;
+  -moz-user-select: none;
+}
+.download-app__button:hover {
+  background-color: #ffffff;
+  color: #d22856;
+}
+.download-app__button:active {
+  color: #f6d0da;
+}
+.download-app__platforms {
+  text-align: center;
+}
+.download-app__description {
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.platform {
+  display: inline-block;
+  width: 53px;
+  height: 58px;
 }
 .cleafix::after {
   content: "";
@@ -274,7 +344,7 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
-@media (min-width: 660px) {
+@media (min-width: 680px) {
   .container {
     width: 620px;
   }
@@ -283,4 +353,9 @@ body {
   .container {
     width: 940px;
   }
+}
+.container-grid {
+  width: 300px;
+  margin: 0 auto 0 0;
+  padding: 0 20px;
 }

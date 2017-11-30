@@ -1,11 +1,13 @@
 .intro {
+  position: relative;
   //height: 462px;
   background-image:
     url(../img/background-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: cover;
+  //background-size: cover;
   margin-left: 0;
+  border-top: 1px solid transparent;
 
 }
 
@@ -15,9 +17,22 @@
   //min-width: 320px;
   background-repeat: no-repeat;
   background-position: 20% bottom;
-  background-size:  auto;
+  background-size:  285px;
   .container();
   height: 462px;
+}
+
+.intro__description-container {
+  padding-top: 66px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro__description {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 100;
+  color: #ffffff;
 }
 
 @media @tablet-widths {
@@ -33,13 +48,14 @@
   }
 
   .intro__wrapper {
+
     background-image:
       url(../img/iphone-6-copy.png);
     //min-width: 320px;
     background-repeat: no-repeat;
     background-repeat: no-repeat;
     background-position: 20% bottom;
-
+    background-size: auto;
     .container();
     height: 733px;
   }
@@ -63,7 +79,7 @@
     //min-width: 320px;
     background-repeat: no-repeat;
     background-position: 20% bottom;
-    //background-size: 470px;
+    background-size: auto;
     .container();
     height: 853px;
   }
