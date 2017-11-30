@@ -17,6 +17,7 @@
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
+  text-align: center;
   color: #ffffff;
   border: 3px solid #ffffff;
   border-radius: 50px;
@@ -53,7 +54,19 @@
 }
 
 @media @tablet-widths {
+  .download-app {
+    position: absolute;
+    background-color: transparent;
+    top: 359px;
+  }
 
-  
+  .download-app__wrapper {
+    .container-grid();
+    float: left;
+  }
 
+  .download-app__button {
+    max-width: 230px;
+    margin-top: 85px;
+  }
 }
