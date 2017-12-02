@@ -140,10 +140,10 @@ body {
   background-color: #d22856;
 }
 .toggler--close:active::before {
-  background-color: #D22856;
+  background-color: #5c324a;
 }
 .toggler--close:active::after {
-  background-color: #D22856;
+  background-color: #5c324a;
 }
 @media (min-width: 680px) {
   .page-header {
@@ -413,6 +413,23 @@ body {
   height: 58px;
 }
 @media (min-width: 680px) {
+  .download-app {
+    position: absolute;
+    background-color: transparent;
+    top: 359px;
+  }
+  .download-app__wrapper {
+    width: 300px;
+    margin: 0 auto 0;
+    padding: 0 20px;
+    float: left;
+  }
+  .download-app__button {
+    max-width: 230px;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 960px) {
   .download-app {
     position: absolute;
     background-color: transparent;
