@@ -31,7 +31,21 @@ body {
 .container-grid {
   width: 300px;
   margin: 0 auto 0;
+}
+.container {
+  width: 280px;
+  margin: 0 auto;
   padding: 0 20px;
+}
+@media (min-width: 680px) {
+  .container {
+    width: 620px;
+  }
+}
+@media (min-width: 960px) {
+  .container {
+    width: 940px;
+  }
 }
 .page-header {
   width: 100%;
@@ -44,6 +58,16 @@ body {
   padding: 0 20px;
   padding-top: 21px;
   padding-bottom: 21px;
+}
+@media (min-width: 680px) {
+  .page-header__container {
+    width: 620px;
+  }
+}
+@media (min-width: 960px) {
+  .page-header__container {
+    width: 940px;
+  }
 }
 @media (min-width: 680px) {
   .page-header__container {
@@ -254,6 +278,16 @@ body {
     width: 940px;
   }
 }
+@media (min-width: 680px) {
+  .intro__wrapper {
+    width: 620px;
+  }
+}
+@media (min-width: 960px) {
+  .intro__wrapper {
+    width: 940px;
+  }
+}
 .intro__description-container {
   padding-top: 66px;
   margin: 0 auto;
@@ -291,7 +325,7 @@ body {
     max-width: 193px;
     float: left;
     padding-top: 186px;
-    padding-left: 55px;
+    padding-left: 35px;
   }
   .intro__description {
     font-size: 40px;
@@ -299,6 +333,16 @@ body {
     font-weight: 200;
     color: #ffffff;
     text-align: center;
+  }
+}
+@media (min-width: 680px) and (min-width: 680px) {
+  .intro__container {
+    width: 620px;
+  }
+}
+@media (min-width: 680px) and (min-width: 960px) {
+  .intro__container {
+    width: 940px;
   }
 }
 @media (min-width: 680px) and (min-width: 680px) {
@@ -335,7 +379,7 @@ body {
     max-width: 240px;
     float: left;
     padding-top: 193px;
-    padding-left: 55px;
+    padding-left: 35px;
   }
   .intro__description {
     font-size: 50px;
@@ -343,6 +387,16 @@ body {
     font-weight: 200;
     color: #ffffff;
     text-align: center;
+  }
+}
+@media (min-width: 960px) and (min-width: 680px) {
+  .intro__wrapper {
+    width: 620px;
+  }
+}
+@media (min-width: 960px) and (min-width: 960px) {
+  .intro__wrapper {
+    width: 940px;
   }
 }
 @media (min-width: 960px) and (min-width: 680px) {
@@ -363,8 +417,19 @@ body {
   width: 280px;
   margin: 0 auto;
   padding: 0 20px;
+  padding: 0 0 0 0;
   min-height: 271px;
   padding-top: 28px;
+}
+@media (min-width: 680px) {
+  .download-app__wrapper {
+    width: 620px;
+  }
+}
+@media (min-width: 960px) {
+  .download-app__wrapper {
+    width: 940px;
+  }
 }
 @media (min-width: 680px) {
   .download-app__wrapper {
@@ -421,7 +486,6 @@ body {
   .download-app__wrapper {
     width: 300px;
     margin: 0 auto 0;
-    padding: 0 20px;
     float: left;
   }
   .download-app__button {
@@ -438,7 +502,6 @@ body {
   .download-app__wrapper {
     width: 300px;
     margin: 0 auto 0;
-    padding: 0 20px;
     float: left;
   }
   .download-app__button {
