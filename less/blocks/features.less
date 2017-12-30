@@ -12,11 +12,22 @@
 
 .features__container {
   .container();
+  .clearfix();
   text-align: center;
+
+}
+
+.features__container--flex {
+  display: flex;
+  flex-direction: column;
 }
 
 .features-item {
   text-align: center;
+}
+
+.features-item:nth-child(1) {
+  padding-top: 80px;
 }
 
 .features-item__title {
@@ -30,14 +41,30 @@
   font-family: "Open Sans";
   font-size: 14px;
   line-height: 24px;
-  font-weight: 300;
+  font-weight: 400;
+  color: #283645;
 
 }
 
-.features-item__image {
-
-}
 
 .features-item__image--mobile-image {
 
+}
+
+
+@media @tablet-widths {
+  .features-item {
+    width: 310px;
+    float: right;
+    text-align: left;
+    clear: right;
+    position: relative;
+  }
+
+  .features-item__img {
+    position: absolute;
+    width: 272px;
+    height: 485px;
+    background-image: url(../img/Iphone screen #3.png);
+  }
 }

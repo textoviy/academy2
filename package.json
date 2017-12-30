@@ -1,17 +1,20 @@
 {
-  "name": "urbanbags",
+  "name": "Pink",
   "version": "1.0.0",
-  "description": "Рюкзаки Bobby",
+  "description": "Посмотри на жизнь по-новому!",
   "main": "gulpfile.js",
   "dependencies": {
+    "gulp-coffee": "^2.3.5",
+    "gulp-less": "^3.3.2",
     "gulp-minify-css": "^1.2.4",
     "gulp-notify": "^3.0.0",
-    "gulp-coffee": "^2.3.5",
-    "gulp-less": "^3.3.2"
+    "gulp-rename": "^1.2.2"
   },
   "devDependencies": {
     "browser-sync": "^2.21.0",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.9.0",
     "gulp-concat-css": "^2.3.0",
     "gulp-csso": "^3.0.0"
   },

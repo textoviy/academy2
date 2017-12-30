@@ -1,9 +1,30 @@
 
 .heading {
-  font-family: "Open Sans Light", italic;
+  font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: 300;
   color: #283645;
   margin-top: 36px;
   margin-bottom: 36px;
+}
+
+@media @tablet-widths {
+	.heading {
+		font-size: 40px;
+        line-height: auto;
+	}
+
+	.heading:nth-child(2) {
+        margin-top: 0;
+        text-align: center;
+	}
+
+	.heading:nth-child(1) {
+        margin-bottom: 0;
+	}
+
+	.heading:last-child {
+    max-width: 580px;
+    margin: auto;
+  }
 }
