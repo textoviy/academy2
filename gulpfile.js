@@ -20,7 +20,6 @@ var files = [
 gulp.task('less', function() {
     return gulp.src("less/style.less") // находим все less файлы в папке less 
         .pipe(less()) // собственно компилируем их
-        .pipe(csso()) // если нужно - сжимаем css код (если не нужно, строчку можно удалить)
         .pipe(autoprefixer())
         .pipe(concatCss('style.css'))
         //.pipe(rename())

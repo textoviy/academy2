@@ -7,12 +7,7 @@ body {
   margin: 0;
   padding: 0;
   min-width: 320px;
-<<<<<<< Updated upstream
-  font-family: "Open Sans",Helvetica,Arial,sans-serif;
-=======
   font-family: "Open Sans","Helvetica","Arial",sans-serif;
->>>>>>> Stashed changes
-  
 }
 
 .cleafix::after {
@@ -59,9 +54,6 @@ body {
 .page-header {
   width: 100%;
   min-height: 66px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -143,22 +135,6 @@ body {
 }
 
 .toggler--open {
-<<<<<<< Updated upstream
-  -webkit-transition: .1s;
-  transition: .1s;
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#fff),color-stop(16.66666667%,#fff),color-stop(16.66666667%,rgba(255,255,255,0)),color-stop(41.66666667%,rgba(255,255,255,0)),color-stop(41.66666667%,#fff),color-stop(58.33333333%,#fff),color-stop(58.33333333%,rgba(255,255,255,0)),color-stop(83.33333333%,rgba(255,255,255,0)),color-stop(83.33333333%,#fff),to(#fff));
-  background-image: linear-gradient(to bottom,#fff 0,#fff 16.66666667%,rgba(255,255,255,0) 16.66666667%,rgba(255,255,255,0) 41.66666667%,#fff 41.66666667%,#fff 58.33333333%,rgba(255,255,255,0) 58.33333333%,rgba(255,255,255,0) 83.33333333%,#fff 83.33333333%,#fff 100%);
-}
-
-.toggler--open:hover {
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#d22856),color-stop(16.66666667%,#d22856),color-stop(16.66666667%,rgba(255,255,255,0)),color-stop(41.66666667%,rgba(255,255,255,0)),color-stop(41.66666667%,#d22856),color-stop(58.33333333%,#d22856),color-stop(58.33333333%,rgba(255,255,255,0)),color-stop(83.33333333%,rgba(255,255,255,0)),color-stop(83.33333333%,#d22856),to(#d22856));
-  background-image: linear-gradient(to bottom,#d22856 0,#d22856 16.66666667%,rgba(255,255,255,0) 16.66666667%,rgba(255,255,255,0) 41.66666667%,#d22856 41.66666667%,#d22856 58.33333333%,rgba(255,255,255,0) 58.33333333%,rgba(255,255,255,0) 83.33333333%,#d22856 83.33333333%,#d22856 100%);
-}
-
-.toggler--open:active {
-  background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(210,40,86,.3)),color-stop(16.66666667%,rgba(210,40,86,.3)),color-stop(16.66666667%,rgba(255,255,255,0)),color-stop(41.66666667%,rgba(255,255,255,0)),color-stop(41.66666667%,rgba(210,40,86,.3)),color-stop(58.33333333%,rgba(210,40,86,.3)),color-stop(58.33333333%,rgba(255,255,255,0)),color-stop(83.33333333%,rgba(255,255,255,0)),color-stop(83.33333333%,rgba(210,40,86,.3)),to(rgba(210,40,86,.3)));
-  background-image: linear-gradient(to bottom,rgba(210,40,86,.3) 0,rgba(210,40,86,.3) 16.66666667%,rgba(255,255,255,0) 16.66666667%,rgba(255,255,255,0) 41.66666667%,rgba(210,40,86,.3) 41.66666667%,rgba(210,40,86,.3) 58.33333333%,rgba(255,255,255,0) 58.33333333%,rgba(255,255,255,0) 83.33333333%,rgba(210,40,86,.3) 83.33333333%,rgba(210,40,86,.3) 100%);
-=======
   transition: .1s;
   background-image: linear-gradient(to bottom,#fff 0%,#fff 16.66666667%,rgba(255,255,255,0) 16.66666667%,rgba(255,255,255,0) 41.66666667%,#fff 41.66666667%,#fff 58.33333333%,rgba(255,255,255,0) 58.33333333%,rgba(255,255,255,0) 83.33333333%,#fff 83.33333333%,#fff 100%);
 }
@@ -169,7 +145,6 @@ body {
 
 .toggler--open:active {
   background-image: linear-gradient(to bottom,rgba(210,40,86,.3) 0%,rgba(210,40,86,.3) 16.66666667%,rgba(255,255,255,0) 16.66666667%,rgba(255,255,255,0) 41.66666667%,rgba(210,40,86,.3) 41.66666667%,rgba(210,40,86,.3) 58.33333333%,rgba(255,255,255,0) 58.33333333%,rgba(255,255,255,0) 83.33333333%,rgba(210,40,86,.3) 83.33333333%,rgba(210,40,86,.3) 100%);
->>>>>>> Stashed changes
 }
 
 .toggler--close {
@@ -184,7 +159,6 @@ body {
   position: absolute;
   width: 4px;
   height: 20px;
-  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   top: 3px;
   left: 11px;
@@ -192,10 +166,6 @@ body {
 }
 
 .toggler--close::after {
-<<<<<<< Updated upstream
-  -webkit-transform: rotate(-45deg);
-=======
->>>>>>> Stashed changes
   transform: rotate(-45deg);
 }
 
@@ -538,8 +508,6 @@ body {
   border-radius: 50px;
   margin: 0 auto 30px;
   cursor: pointer;
-  -webkit-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   -moz-user-select: none;
 }
