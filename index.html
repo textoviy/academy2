@@ -92,99 +92,117 @@
           <p class="features-item__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
           <div class="features-item__img features-item__img--smile"></div>
         </div>
-        <!-- <div class="features-item__image features-item__image--mobile-image"></div> -->
-        
       </div>
     </div>
   </section>
   <section class="reviews">
     <div class="reviews__container">
-    <div class="slider-pagination slider-pagination__reviews">
-      <input type="radio" class="slider-pagination__item  slider-pagination__item--1">
-      <input type="radio" class="slider-pagination__item  slider-pagination__item--2">
-      <input type="radio" class="slider-pagination__item  slider-pagination__item--3">
-    </div>
-      <article class="reviews-item  reviews-item--1">
+        <input type="radio" id="slider-1" class="" name="reviews-radio" checked>
+        <input type="radio" id="slider-2" class="" name="reviews-radio">
+        <input type="radio" id="slider-3" class="" name="reviews-radio">
+      <div class="reviews-item  reviews-item--1">
         <span class="reviews-item__title">Николай Петров</span>
         <p class="reviews-item__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-      </article>
-      <article class="reviews-item  reviews-item--2">
-        <span class="reviews-item__title"></span>
-        <p class="reviews-item__text"></p>
-      </article>
-      <article class="reviews-item  reviews-item--3">
-        <span class="reviews-item__title"></span>
-        <p class="reviews-item__text"></p>
-      </article>
+        <p class="reviews-item__text--author">25 лет, водитель трамвая</p>
+      </div>
+      <div class="reviews-item  reviews-item--2">
+        <span class="reviews-item__title">Lorem ipsum dolor.</span>
+        <p class="reviews-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos cumque recusandae, fugit et! Quaerat porro quisquam ut nesciunt, odit tempora.</p>
+      </div>
+      <div class="reviews-item  reviews-item--3">
+        <span class="reviews-item__title">Далеко-далеко за словесными.</span>
+        <p class="reviews-item__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Всеми он точках путь ты домах великий, составитель рекламных все.</p>
+
+      </div>
+      <div class="slider-pagination slider-pagination--reviews">
+          <label for="slider-1" class="slider-pagination__item slider-pagination__item--1"></label>
+          <label for="slider-2" class="slider-pagination__item slider-pagination__item--2"></label>
+          <label for="slider-3" class="slider-pagination__item slider-pagination__item--3"></label>
+      </div>
     </div>
   </section>
   <section class="price">
     <div class="price__container">
-    <div class="slider-pagination slider-pagination__price">
-      <input type="radio" class="slider-pagination__item  slider-pagination__item--1">
-      <input type="radio" class="slider-pagination__item  slider-pagination__item--2">
-      <input type="radio" class="slider-pagination__item  slider-pagination__item--3">
-    </div>
+        <input type="radio" id="slider-4" class="" name="price-radio" checked>
+        <input type="radio" id="slider-5" class="" name="price-radio">
+        <input type="radio" id="slider-6" class="" name="price-radio">
+        <input type="radio" id="slider-7" class="" name="price-radio">
     <table class="price-table">
       <tbody>
         <tr>
-          <td class="price-table__header  price-table__header--empty"></td>
-          <td class="price-table__header">
+          <!-- <td class="price-table__header  price-table__header--empty"></td> -->
+          <td class="price-table__header price-table__header--empty">
             <div class="price-table__flag"></div>
             <p class="price-table__title"></p>
             <p class="price-table__cost"></p>
           </td>
           <td class="price-table__header">
             <div class="price-table__flag"></div>
-            <p class="price-table__title"></p>
-            <p class="price-table__cost"></p>
+            <p class="price-table__title">База</p>
+            <p class="price-table__cost">1,99 USD</p>
           </td>
           <td class="price-table__header">
             <div class="price-table__flag"></div>
-            <p class="price-table__title"></p>
-            <p class="price-table__cost"></p>
+            <p class="price-table__title">Стандарт</p>
+            <p class="price-table__cost">3,99 USD</p>
+          </td>
+          <td class="price-table__header">
+            <div class="price-table__flag"></div>
+            <p class="price-table__title">Анлим</p>
+            <p class="price-table__cost">9,99 USD</p>
           </td>
         </tr>
         <tr>
-          <td class="price-table__service  price-table__service--yes">.</td>
           <td class="price-table__service  price-table__service--yes">Розовый фильтр</td>
+          <td class="price-table__service  price-table__service--yes"></td>
           <td class="price-table__service  price-table__service--yes">.</td>
+          <td class="price-table__service  price-table__service--yes"></td>
         </tr>
         <tr>
-          <td class="price-table__service  price-table__service--no">.</td>
-          <td class="price-table__service  price-table__service--yes">Смайлики</td>
+          <td class="price-table__service  price-table__service--no">Смайлики</td>
+          <td class="price-table__service  price-table__service--yes"></td>
           <td class="price-table__service  price-table__service--yes">.</td>
+          <td class="price-table__service  price-table__service--yes"></td>
         </tr>
         <tr>
-          <td class="price-table__service  price-table__service--no">.</td>
           <td class="price-table__service  price-table__service--no">Комментарии</td>
+          <td class="price-table__service  price-table__service--no"></td>
           <td class="price-table__service  price-table__service--yes">.</td>
+          <td class="price-table__service  price-table__service--yes"></td>
         </tr>
       </tbody>
     </table>
+    <div class="slider-pagination slider-pagination--price">
+          <label for="slider-4" class="slider-pagination__item slider-pagination__item--4"></label>
+          <label for="slider-5" class="slider-pagination__item slider-pagination__item--5"></label>
+          <label for="slider-6" class="slider-pagination__item slider-pagination__item--6"></label>
+          <label for="slider-7" class="slider-pagination__item slider-pagination__item--7"></label>
+      </div>
     </div>
   </section>
   <footer class="page-footer">
     <div class="page-footer__container">
     <div class="contacts">
-      <div class="contacts__container">
-        <h3 class="contacts__heading">Остались вопросы? Свяжитесь с нами!</h3>
+        <h3 class="heading">Остались вопросы? Свяжитесь с нами!</h3>
         <div class="contacts-item">
-          <p class="contacts-item__title"></p>
-          <p class="contacts-item__text"></p>
+          <span class="contacts-item__title">Звоните:</span>
+            <br>
+          <span class="contacts-item__text">+7 (800) 555-35-35</span>
         </div>
         <div class="contacts-item">
-          <p class="contacts-item__title"></p>
-          <p class="contacts-item__text"></p>
+          <span class="contacts-item__title">Пишите:</span>
+            <br>
+          <span class="contacts-item__text">textoviy@yandex.ru</span>
         </div>
         <div class="contacts-item">
-          <p class="contacts-item__title"></p>
-          <p class="contacts-item__text"></p>
+          <span class="contacts-item__title">Приезжайте в гости:</span>
+            <br>
+          <span class="contacts-item__text">Manhattan, New York, NY, USA</span>
         </div>
-      </div>
     </div>
-    <iframe src="" frameborder="0"></iframe>
+    
     </div>
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d96733.31099194437!2d-74.01249212519532!3d40.74187452466017!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25990e23d7e8d%3A0xfa615edfd1b67e18!2sWashington+Square+Park!5e0!3m2!1sen!2suk!4v1515260595515" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
   </footer>
 </body>
 

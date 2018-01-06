@@ -5,7 +5,8 @@ var concatCss   = require('gulp-concat-css');
 var csso        = require('gulp-csso');
 var autoprefixer = require('gulp-autoprefixer');
 var rename      = require('gulp-rename');
-var minifyCss      = require('gulp-clean-css');
+var minifyCss   = require('gulp-clean-css');
+var plumber     = require('gulp-plumber')
 // var autoprefixer = require('gulp-autoprefixer');
 var files = [
     '*.html',
@@ -19,12 +20,13 @@ var files = [
 // Компилируем Less при помощи плагина gulp-less 
 gulp.task('less', function() {
     return gulp.src("less/style.less") // находим все less файлы в папке less 
+        .pipe(plumber()) // продолжаем отслеживание в случае ошибки
         .pipe(less()) // собственно компилируем их
         .pipe(autoprefixer())
         .pipe(concatCss('style.css'))
         //.pipe(rename())
         .pipe(minifyCss())
-        .pipe(rename("style.min.css"))
+        .pipe(rename({suffix: '.min'}))
          // при желании можно объединить все в один css-файл 
         .pipe(gulp.dest("css")) // выгружаем файлы в папку app в раздел css 
         .pipe(browserSync.stream()); // при желании можно обновить browser-sync после изменений
