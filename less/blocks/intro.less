@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   background-position: center top;
   margin-left: 0;
+  background-size: auto 462px;
   // border-top: 1px solid transparent;
 }
 
@@ -15,10 +16,10 @@
 
 .intro__wrapper {
   background-image:
-    url(../img/iphone-5-in-hand-png.png);
+    url(../img/iphone-5-in-hand-mobile@1x.png);
   background-repeat: no-repeat;
-  background-position: 20% bottom;
-  background-size:  285px;
+  background-position: right bottom;
+  background-size: auto 285px;
   .container();
   height: 462px;
 }
@@ -36,11 +37,41 @@
   color: #ffffff;
 }
 
+@media @retina-x2 {
+  .intro {
+    background-image:
+    url(../img/background-mobile@2x.jpg);  
+  }
+
+  .intro__wrapper {
+  background-image:
+    url(../img/iphone-5-in-hand-mobile@2x.png);
+  }
+
+  }
+
+@media @retina-x3 {
+  .intro {
+    background-image:
+    url(../img/background-mobile@3x.jpg);  
+  }
+
+.intro__wrapper {
+  background-image:
+    url(../img/iphone-5-in-hand-mobile@3x.png);
+  }  
+
+  }
+
+
+/*
+TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET  
+ */
 @media @tablet-widths {
   .intro {
     //height: 462px;
     background-image:
-      url(../img/background-mobile@2x.jpg);
+      url(../img/background-tablet@1x.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -57,7 +88,7 @@
   .intro__wrapper {
 
     background-image:
-      url(../img/iphone-6-copy.png);
+      url(../img/iphone-5-in-hand-tablet@1x.png);
     //min-width: 320px;
     background-repeat: no-repeat;
     background-repeat: no-repeat;
@@ -84,13 +115,44 @@
     text-align: center;
   }
 
+  @media @retina-x2 {
+  .intro {
+    background-image:
+    url(../img/background-tablet@2x.jpg);  
+  }
+
+  .intro__wrapper {
+  background-image:
+    url(../img/iphone-5-in-hand-tablet@2x.png);
+  }
+
+  }
+
+@media @retina-x3 {
+  .intro {
+    background-image:
+    url(../img/background-tablet@3x.jpg);  
+  }
+
+.intro__wrapper {
+  background-image:
+    url(../img/iphone-5-in-hand-tablet@3x.png);
+  }  
+
+  }
+
 }
+
+/*
+DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP 
+ */
+
 
 @media @desktop-widths {
   .intro {
     //height: 462px;
     background-image:
-      url(../img/background-mobile@3x.jpg);
+      url(../img/background-desktop@1x.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -100,11 +162,11 @@
 
   .intro__wrapper {
     background-image:
-      url(../img/iphone-6-desktop.png);
+      url(../img/iphone-5-in-hand-desktop@1x.png);
     //min-width: 320px;
     background-repeat: no-repeat;
-    background-position: 20% bottom;
-    background-size: auto;
+    background-position: right bottom;
+    background-size: auto 645px;
     .container();
     //width: 940px;
     padding: 0;
@@ -127,7 +189,35 @@
     color: #ffffff;
     text-align: center;
   }
+
+  @media @retina-x2 {
+  .intro {
+    background-image:
+    url(../img/background-desktop@2x.jpg);  
+  }
+
+  .intro__wrapper {
+  background-image:
+    url(../img/iphone-5-in-hand-desktop@2x.png);
+  }
+
+  }
+
+@media @retina-x3 {
+  .intro {
+    background-image:
+    url(../img/background-desktop@3x.jpg);  
+  }
+
+.intro__wrapper {
+  background-image:
+    url(../img/iphone-5-in-hand-desktop@3x.png);
+  }  
+
+  }
 }
+
+
 
 
 
