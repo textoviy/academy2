@@ -7,13 +7,20 @@
 }
 
 .features__items {
- padding-top: 110px;
+ padding-top: 74px;
+ background-color: #f2f2f2;
+background-image: url(../img/bg-triangle-white.svg);
+background-repeat: no-repeat;
+background-size: 100% auto;
+background-position: 50% 0;
 }
+
 
 .features__container {
   .container();
   .clearfix();
   text-align: center;
+
 
 }
 
@@ -45,7 +52,6 @@
 
 
 .features-item__title {
-
   font-size: 18px;
   line-height: 10px;
 
@@ -71,6 +77,11 @@
 
 
 @media @tablet-widths {
+
+  .features__container {
+    padding-bottom: 30px;
+  }
+
   .features-item {
     width: 310px;
     float: right;
