@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pink: Главная</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic,600&amp;subset=latin,cyrillic">
 </head>
@@ -326,10 +327,8 @@
     </picture> -->
       <img src="img/timer-24.svg" alt="ЦЕЛЫХ 24 ЧАСА! ПОЙМИТЕ ЭТО!" class="hours-effect__img">
       <div class="hours-effect__item">
-        <h2 class="hours-effect__title">Эффект на 24 часа!</h2>
-        <p class="hours-effect__text">Британские ученые провели исследования
-                                      и доказали, что положительный эффект
-                                        от использования приложения длится целые сутки!</p>
+        <h2 class="hours-effect__title">Эффект на&nbsp;24 часа!</h2>
+        <p class="hours-effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
         <a href="#" class="hours-effect__link">Узнать больше об исследовании</a>
       </div>
     </div>
@@ -357,6 +356,10 @@
         <label for="slider-2" class="slider-pagination__item slider-pagination__item--2"></label>
         <label for="slider-3" class="slider-pagination__item slider-pagination__item--3"></label>
       </div>
+      <div class="slider-pagination slider-pagination--desktop">
+        <div class="slider-pagination__arrow  "></div>
+        <div class="slider-pagination__arrow  slider-pagination__arrow--right"></div>
+      </div>
     </div>
   </section>
   <section class="price">
@@ -375,37 +378,37 @@
               <p class="price-table__cost"></p>
             </td>
             <td class="price-table__header">
-              <div class="price-table__flag"></div>
+              <!--  <div class="price-table__flag"></div>-->
               <p class="price-table__title">База</p>
               <p class="price-table__cost">1,99 USD</p>
             </td>
-            <td class="price-table__header">
-              <div class="price-table__flag"></div>
+            <td class="price-table__header price-table__header--flag">
+              <!--   <div class="price-table__flag"></div>-->
               <p class="price-table__title">Стандарт</p>
               <p class="price-table__cost">3,99 USD</p>
             </td>
             <td class="price-table__header">
-              <div class="price-table__flag"></div>
+              <!--  <div class="price-table__flag"></div>-->
               <p class="price-table__title">Анлим</p>
               <p class="price-table__cost">9,99 USD</p>
             </td>
           </tr>
           <tr>
-            <td class="price-table__service  price-table__service--yes">Розовый фильтр</td>
+            <td class="price-table__service">Розовый фильтр</td>
             <td class="price-table__service  price-table__service--yes"></td>
-            <td class="price-table__service  price-table__service--yes">.</td>
             <td class="price-table__service  price-table__service--yes"></td>
-          </tr>
-          <tr>
-            <td class="price-table__service  price-table__service--no">Смайлики</td>
-            <td class="price-table__service  price-table__service--yes"></td>
-            <td class="price-table__service  price-table__service--yes">.</td>
             <td class="price-table__service  price-table__service--yes"></td>
           </tr>
           <tr>
-            <td class="price-table__service  price-table__service--no">Комментарии</td>
+            <td class="price-table__service">Смайлики</td>
             <td class="price-table__service  price-table__service--no"></td>
-            <td class="price-table__service  price-table__service--yes">.</td>
+            <td class="price-table__service  price-table__service--yes"></td>
+            <td class="price-table__service  price-table__service--yes"></td>
+          </tr>
+          <tr>
+            <td class="price-table__service">Комментарии</td>
+            <td class="price-table__service  price-table__service--no"></td>
+            <td class="price-table__service  price-table__service--no"></td>
             <td class="price-table__service  price-table__service--yes"></td>
           </tr>
         </tbody>
@@ -439,7 +442,121 @@
         </div>
       </div>
     </div>
-    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d96733.31099194437!2d-74.01249212519532!3d40.74187452466017!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25990e23d7e8d%3A0xfa615edfd1b67e18!2sWashington+Square+Park!5e0!3m2!1sen!2suk!4v1515260595515" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div class="map__container">
+      <iframe class="map"  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d96733.31099194437!2d-74.01249212519532!3d40.74187452466017!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25990e23d7e8d%3A0xfa615edfd1b67e18!2sWashington+Square+Park!5e0!3m2!1sen!2suk!4v1515260595515" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="last-links">
+      <div class="last-links__container">
+        <!-- Tablet Logo
+        ------------------------------------------------------------------------------------------------- -->
+        <svg version="1.1" class="last-links__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 146.3 40.4" style="enable-background:new 0 0 146.3 40.4;" xml:space="preserve">
+          <style type="text/css">
+          .st8 {
+            fill: #283645;
+          }
+
+          .st9 {
+            fill: #FFFFFF;
+          }
+
+          .st10 {
+            fill: #D22856;
+          }
+
+          </style>
+          <g>
+            <path class="st8" d="M71.9,18.7c0-0.7,0.6-1.3,1.3-1.3h7.2c5.1,0,8.4,2.7,8.4,7.1v0.1c0,4.9-4.1,7.4-8.9,7.4h-5.5v6.8
+    c0,0.7-0.6,1.3-1.3,1.3c-0.7,0-1.3-0.6-1.3-1.3L71.9,18.7L71.9,18.7z M80,29.6c3.7,0,6.2-2,6.2-5v-0.1c0-3.2-2.4-4.9-6.1-4.9h-5.7
+    v9.9L80,29.6L80,29.6z" />
+            <path class="st8" d="M93.6,18.5c0-0.7,0.6-1.3,1.3-1.3c0.7,0,1.3,0.6,1.3,1.3v20.3c0,0.7-0.6,1.3-1.3,1.3c-0.7,0-1.3-0.6-1.3-1.3
+    V18.5z" />
+            <path class="st8" d="M102.7,18.5c0-0.7,0.6-1.3,1.3-1.3h0.4c0.6,0,0.9,0.3,1.3,0.7l13.7,17.4v-17c0-0.7,0.5-1.3,1.3-1.3
+    c0.7,0,1.2,0.6,1.2,1.3v20.3c0,0.7-0.5,1.2-1.2,1.2h-0.1c-0.5,0-0.9-0.3-1.3-0.8l-14-17.9v17.4c0,0.7-0.5,1.3-1.3,1.3
+    c-0.7,0-1.2-0.6-1.2-1.3L102.7,18.5L102.7,18.5z" />
+            <path class="st8" d="M128.2,18.5c0-0.7,0.6-1.3,1.3-1.3c0.7,0,1.3,0.6,1.3,1.3v12.3l12.8-13.2c0.3-0.3,0.6-0.5,1-0.5
+    c0.7,0,1.2,0.6,1.2,1.3c0,0.4-0.2,0.6-0.4,0.9l-8,7.9l8.6,10.6c0.2,0.3,0.4,0.5,0.4,0.9c0,0.7-0.6,1.3-1.3,1.3
+    c-0.5,0-0.8-0.3-1-0.6L135.6,29l-4.9,4.9v4.9c0,0.7-0.6,1.3-1.3,1.3c-0.7,0-1.3-0.6-1.3-1.3L128.2,18.5L128.2,18.5z" />
+          </g>
+          <path class="st9" d="M60.5,28.3" />
+          <path class="st10" d="M60.5,28c0,0-5.2-21.4-5.2-21.4C54.9,4.3,52.7,0,46.7,0c-0.8,0-1.5,0.7-1.5,1.5S45.9,3,46.7,3
+  c4.9,0,5.6,3.7,5.6,4.1l4.8,19.7H55c-0.7-5.9-5.8-10.5-11.9-10.5s-11.2,4.6-11.9,10.5h-1.8c-0.7-5.9-5.8-10.5-11.9-10.5
+  S6.2,20.9,5.5,26.8H3.4L8.2,7.1C8.3,6.7,9,3,13.8,3c0.8,0,1.5-0.7,1.5-1.5S14.7,0,13.8,0c-6,0-8.2,4.3-8.6,6.7
+  c0,0-5.2,21.4-5.2,21.4c-0.3,1.1,0.5,1.8,1.4,1.8c0,0,0,0,0,0h4c0.7,5.9,5.8,10.5,11.9,10.5s11.2-4.6,11.9-10.5h1.8
+  c0.7,5.9,5.8,10.5,11.9,10.5S54.3,35.8,55,29.8h4c0,0,0,0,0,0C59.9,29.8,60.7,29.1,60.5,28z M26.3,29.8c-0.7,4.3-4.4,7.5-8.9,7.5
+  s-8.2-3.3-8.9-7.5c-0.1-0.5-0.1-1-0.1-1.5c0-0.5,0.1-1,0.1-1.5c0.7-4.3,4.4-7.5,8.9-7.5s8.2,3.3,8.9,7.5c0.1,0.5,0.1,1,0.1,1.5
+  C26.5,28.9,26.4,29.4,26.3,29.8z M52,29.8c-0.7,4.3-4.4,7.5-8.9,7.5c-4.5,0-8.2-3.3-8.9-7.5c-0.1-0.5-0.1-1-0.1-1.5
+  c0-0.5,0.1-1,0.1-1.5c0.7-4.3,4.4-7.5,8.9-7.5c4.5,0,8.2,3.3,8.9,7.5c0.1,0.5,0.1,1,0.1,1.5C52.1,28.9,52.1,29.4,52,29.8z" />
+        </svg>
+        <!-- Desktop Logo -->
+        <svg version="1.1" class="last-links__logo--desktop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 146.3 40.4" style="enable-background:new 0 0 146.3 40.4;" xml:space="preserve">
+          <style type="text/css">
+          .st11 {
+            fill: #283645;
+          }
+
+          .st12 {
+            fill: #D22856;
+          }
+
+          </style>
+          <g>
+            <path class="st11" d="M71.9,18.7c0-0.7,0.6-1.3,1.3-1.3h7.2c5.1,0,8.4,2.7,8.4,7.1v0.1c0,4.9-4.1,7.4-8.9,7.4h-5.5v6.8
+    c0,0.7-0.6,1.3-1.3,1.3c-0.7,0-1.3-0.6-1.3-1.3L71.9,18.7L71.9,18.7z M80,29.6c3.7,0,6.2-2,6.2-5v-0.1c0-3.2-2.4-4.9-6.1-4.9h-5.7
+    v9.9L80,29.6L80,29.6z" />
+            <path class="st11" d="M93.6,18.5c0-0.7,0.6-1.3,1.3-1.3c0.7,0,1.3,0.6,1.3,1.3v20.3c0,0.7-0.6,1.3-1.3,1.3c-0.7,0-1.3-0.6-1.3-1.3
+    V18.5z" />
+            <path class="st11" d="M102.7,18.5c0-0.7,0.6-1.3,1.3-1.3h0.4c0.6,0,0.9,0.3,1.3,0.7l13.7,17.4v-17c0-0.7,0.5-1.3,1.3-1.3
+    c0.7,0,1.2,0.6,1.2,1.3v20.3c0,0.7-0.5,1.2-1.2,1.2h-0.1c-0.5,0-0.9-0.3-1.3-0.8l-14-17.9v17.4c0,0.7-0.5,1.3-1.3,1.3
+    c-0.7,0-1.2-0.6-1.2-1.3L102.7,18.5L102.7,18.5z" />
+            <path class="st11" d="M128.2,18.5c0-0.7,0.6-1.3,1.3-1.3c0.7,0,1.3,0.6,1.3,1.3v12.3l12.8-13.2c0.3-0.3,0.6-0.5,1-0.5
+    c0.7,0,1.2,0.6,1.2,1.3c0,0.4-0.2,0.6-0.4,0.9l-8,7.9l8.6,10.6c0.2,0.3,0.4,0.5,0.4,0.9c0,0.7-0.6,1.3-1.3,1.3
+    c-0.5,0-0.8-0.3-1-0.6L135.6,29l-4.9,4.9v4.9c0,0.7-0.6,1.3-1.3,1.3c-0.7,0-1.3-0.6-1.3-1.3L128.2,18.5L128.2,18.5z" />
+          </g>
+          <path class="st12" d="M98.5,9.9c-2,0-3.6-1.6-3.6-3.6c0,2-1.6,3.6-3.6,3.6c2,0,3.6,1.6,3.6,3.6C94.9,11.5,96.5,9.9,98.5,9.9z" />
+          <g>
+            <path class="st12" d="M43.1,19.3c0.2,0,0.5,0,0.7,0c-0.4-0.7-1.2-1.2-2.1-1.2c-0.9,0-1.6-0.6-1.9-1.4c-0.7,0.2-1.4,0.5-2.1,0.8
+    c0.1,0,0.1,0,0.2,0c1.1,0,2,0.9,2,2c0,0.1,0,0.2,0,0.3C40.9,19.5,42,19.3,43.1,19.3z" />
+            <path class="st12" d="M60.5,28c0,0-5.2-21.4-5.2-21.4C54.9,4.3,52.7,0,46.7,0c-0.8,0-1.5,0.7-1.5,1.5S45.9,3,46.7,3
+    c4.9,0,5.6,3.7,5.6,4.1l4.8,19.7H55c-0.4-3.6-2.5-6.6-5.3-8.5c-0.9,0.4-1.5,1.3-1.5,2.3c0,0.1,0,0.2,0,0.3c2,1.4,3.4,3.5,3.8,6
+    c0.1,0.5,0.1,1,0.1,1.5c0,0.5-0.1,1-0.1,1.5c-0.7,4.3-4.4,7.5-8.9,7.5c-4.5,0-8.2-3.3-8.9-7.5c-0.1-0.5-0.1-1-0.1-1.5
+    c0-0.5,0.1-1,0.1-1.5c0.1-0.9,0.4-1.7,0.8-2.5c-1-0.1-1.9-0.9-1.9-2c0-0.2-0.1-0.4-0.2-0.5c-0.9,1.5-1.6,3.1-1.8,5h-1.8
+    c-0.7-5.9-5.8-10.5-11.9-10.5S6.2,20.9,5.5,26.8H3.4L8.2,7.1C8.3,6.7,9,3,13.8,3c0.8,0,1.5-0.7,1.5-1.5S14.7,0,13.8,0
+    c-6,0-8.2,4.3-8.6,6.7c0,0-5.2,21.4-5.2,21.4c-0.3,1.1,0.5,1.8,1.4,1.8c0,0,0,0,0,0h4c0.1,0.6,0.2,1.2,0.4,1.8
+    C5.9,31.6,6,31.5,6,31.3c0-1.1,0.9-2,2-2c0.2,0,0.3,0,0.5,0.1c0-0.3-0.1-0.7-0.1-1c0-0.5,0.1-1,0.1-1.5c0.7-4.3,4.4-7.5,8.9-7.5
+    s8.2,3.3,8.9,7.5c0.1,0.5,0.1,1,0.1,1.5c0,0.5-0.1,1-0.1,1.5c-0.7,4.3-4.4,7.5-8.9,7.5c-2,0-3.9-0.7-5.4-1.8
+    c-0.4,0.3-0.8,0.5-1.3,0.5c-0.4,0-0.7,0.3-0.7,0.7c0,0.3-0.1,0.6-0.2,0.8c2.1,1.7,4.7,2.7,7.6,2.7c6.1,0,11.2-4.6,11.9-10.5h1.8
+    c0.7,5.9,5.8,10.5,11.9,10.5S54.3,35.8,55,29.8h4c0,0,0,0,0,0C59.9,29.8,60.7,29.1,60.5,28z" />
+          </g>
+          <g>
+            <g>
+              <path class="st11" d="M50.7,16.1c-2.5,0-4.5-2-4.5-4.5c0,2.5-2,4.5-4.5,4.5c2.5,0,4.5,2,4.5,4.5C46.2,18.1,48.2,16.1,50.7,16.1z" />
+            </g>
+          </g>
+          <g>
+            <g>
+              <path class="st11" d="M37.9,19.6c-1.5,0-2.7-1.2-2.7-2.7c0,1.5-1.2,2.7-2.7,2.7c1.5,0,2.7,1.2,2.7,2.7
+      C35.2,20.9,36.4,19.6,37.9,19.6z" />
+            </g>
+          </g>
+          <g>
+            <g>
+              <path class="st11" d="M10.7,34.1c-1.5,0-2.7-1.2-2.7-2.8c0,1.5-1.2,2.8-2.7,2.8c1.5,0,2.7,1.2,2.7,2.7C8,35.3,9.2,34.1,10.7,34.1z" />
+            </g>
+          </g>
+        </svg>
+        <ul class="social-links">
+          <li class="social-links__item">
+            <a href="#" class="social-links__link  social-links__link--facebook"></a>
+          </li>
+          <li class="social-links__item">
+            <a href="#" class="social-links__link  social-links__link--twitter"></a>
+          </li>
+          <li class="social-links__item">
+            <a href="#" class="social-links__link  social-links__link--youtube"></a>
+          </li>
+      </div>
+    </div>
+    </div>
   </footer>
 </body>
 

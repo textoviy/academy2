@@ -10,19 +10,51 @@ body {
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
 }
 
-.map {
-	margin: 0 auto;
+.map__container {
+	width: 100%;
+	position: relative;
+	height: 100%;
+}
+
+.map__container::before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 200px;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+	background-image: url(../img/triangle-white-footer.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+
 }
 
 @media @tablet-widths {
 	.map {
 		height: 380px;
 	}
+
+	.map__container::before {
+		
+		height: 380px;
+		background-size: contain;
+		background-image: url(../img/triangle-white-footer.svg);
+	}
 }
 
 @media @desktop-widths {
 	.map {
 		height: 500px;
+	}
+
+	.map__container::before {
+		
+		height: 150px;
+        background-size: 100% 150px;
+        background-image: url(../img/bg-white-mask.svg);
 	}
 }
 
