@@ -1,48 +1,103 @@
-var gulp        = require('gulp');
-var browserSync = require('browser-sync').create();
-var less        = require('gulp-less');
-var concatCss   = require('gulp-concat-css');
-var csso        = require('gulp-csso');
-var autoprefixer = require('gulp-autoprefixer');
-var rename      = require('gulp-rename');
-var minifyCss   = require('gulp-clean-css');
-var plumber     = require('gulp-plumber')
-// var autoprefixer = require('gulp-autoprefixer');
-var files = [
-    '*.html',
-    'css/**/*.css',
-    'less/**/*.less',
-    'img/**/*.png',
-    'js/**/*.js'
-  ];
-// для правильной работы не забудьте подключить плагины к своему проекту
+var gulp = require("gulp");
+var less = require("gulp-less");
+var plumber = require("gulp-plumber");
+var postcss = require("gulp-postcss");
+var autoprefixer = require("autoprefixer");
+var mqpacker = require("css-mqpacker");
+var minify = require("gulp-csso");
+var rename = require("gulp-rename");
+var imagemin = require("gulp-imagemin");
+var svgstore = require("gulp-svgstore");
+var svgmin = require("gulp-svgmin");
+var del = require("del");
+var server = require("browser-sync").create();
+var run = require("run-sequence");
 
-// Компилируем Less при помощи плагина gulp-less 
-gulp.task('less', function() {
-    return gulp.src("less/style.less") // находим все less файлы в папке less 
-        .pipe(plumber()) // продолжаем отслеживание в случае ошибки
-        .pipe(less()) // собственно компилируем их
-        .pipe(autoprefixer())
-        .pipe(concatCss('style.css'))
-        //.pipe(rename())
-        .pipe(minifyCss())
-        .pipe(rename({suffix: '.min'}))
-         // при желании можно объединить все в один css-файл 
-        .pipe(gulp.dest("css")) // выгружаем файлы в папку app в раздел css 
-        .pipe(browserSync.stream()); // при желании можно обновить browser-sync после изменений
+gulp.task("build", function(fn) {
+	run(
+		"clean",
+		"copy",
+		"style",
+		"images",
+		"symbols",
+		fn
+	);
 });
 
-// Настраиваем сервер browser-sync для отслеживания изменений в проекте 
-gulp.task('serve', ['less'], function() {
-    // Запускаем сервер и указываем за какой папкой нужно следить 
-    browserSync.init(files, {
-        server: {
-      baseDir: './'
-    }
-    });
-    gulp.watch("less/**/*.less", ['less']); // следим за изменениями less файлов и сразу запускаем таск less 
-    gulp.watch("*.html").on('change', browserSync.reload); // запускаем перезагрузку страницы при изменениях html 
+gulp.task("clean", function() {
+	return del("build");
+})
+
+gulp.task("style", function() {
+	gulp.src("less/style.less")
+	.pipe(plumber())
+	.pipe(less())
+
+	.pipe(postcss([
+		autoprefixer({browsers: [
+			"last 2 versions"
+			]}),
+		mqpacker({sort: true})
+		]))
+
+	.pipe(gulp.dest("build/css"))
+	.pipe(minify())
+
+	.pipe(rename("style.min.css"))
+	.pipe(gulp.dest("build/css"))
+
+	.pipe(server.stream());
+});
+
+gulp.task("images", function() {
+	return gulp.src("build/img/**/*.{png,jpg,gif}")
+	  .pipe(imagemin([
+	  imagemin.optipng({optimizationLevel: 3}),
+	  imagemin.jpegtran({progressive: true})
+	  ]))
+	  .pipe(gulp.dest("build/img"));
+});
+
+gulp.task("symbols", function() {
+	return gulp.src("build/img/icons/*.svg")
+	.pipe(svgmin())
+	.pipe(svgstore({
+		inlineSvg: true
+	}))
+	.pipe(rename("symbols.svg"))
+	.pipe(gulp.dest("build/img"));
+});
+
+gulp.task("copy", function() {
+	return gulp.src([
+		"fonts/**/*.{woff,woff2}",
+		"img/**",
+		"js/**",
+		"*.html"
+		], {
+			base: "."
+		})
+	.pipe(gulp.dest("build"));
+});
+
+gulp.task("html:copy", function() {
+	return gulp.src("*.html")
+	.pipe(gulp.dest("build"));
+});
+
+gulp.task("html:update", ["html:copy"], function(done) {
+	server.reload();
+	done();
+});
+
+gulp.task("serve", function() {
+	server.init({
+		server: "build/"
+	});
+
+gulp.watch("less/**/*.less", ["style"]).on("change", server.reload);
+gulp.watch("*.html", ["html:update"]);
+//.on("change", server.reload);
 });
 
 
-gulp.task('default', ['serve']); // делаем это стандартным таском

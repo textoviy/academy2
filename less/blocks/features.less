@@ -1,5 +1,7 @@
 .features {
   font-family: "Open Sans";
+  position: relative;
+  top: -1px;
 }
 
 .features__title {
@@ -78,6 +80,11 @@ background-position: 50% 0;
 
 @media @tablet-widths {
 
+  .features {
+    position: static;
+  top: 0px;
+  }
+
   .features__container {
     padding-bottom: 30px;
   }
@@ -123,6 +130,12 @@ background-position: 50% 0;
 }
 
 @media @desktop-widths {
+
+  .features {
+    position: static;
+  top: 0px;
+  }
+  
   .features__items {
     padding-top: 370px;
    }
